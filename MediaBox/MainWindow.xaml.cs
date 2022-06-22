@@ -31,8 +31,11 @@ namespace MediaBox
             binding.Source = m_playItemList;
             binding.Path = new PropertyPath("ListItems");
             m_playListView.SetBinding(ItemsControl.ItemsSourceProperty, binding);
+            OnOpenPlayList(null, null);
 
         }
+
+        
 
         private void OnOpen_Click(object sender, RoutedEventArgs e)
         {
